@@ -15,15 +15,16 @@ fr_woord = {'wachten':'attendre',
             print('dat is niet goed.')
 '''
 def van_nl_naar_fr():
-    woorden=list(fr_woord.keys())
+    incorrectents = list(fr_woord.keys())
+    woorden=incorrectents
     random.shuffle(woorden)
-    incorrectents=list(woorden)
-    for nl_woord in woorden:
-        fr = input(f"wat betekent {nl_woord} in het Frans \n")
-        if fr == fr_woord[nl_woord]:
-            print('goed gedaan.')
-            incorrectents.remove(nl_woord)
-        else:
-            print('dat is niet goed.')
-    print(incorrectents)
+    while incorrectents:
+        for nl_woord in woorden:
+            fr = input(f"wat betekent {nl_woord} in het Frans \n")
+            if fr == fr_woord[nl_woord]:
+                print('goed gedaan.')
+                incorrectents.remove(nl_woord)
+            else:
+                print('dat is niet goed.')
+        print(incorrectents)
 van_nl_naar_fr()
