@@ -2,7 +2,9 @@ woorden = {'wachten':'attendre',
            'verwarren':'confondre',
            'overeenkomen/corresponderen':'correspondre'}
 
-if input(f"wat betekent {woorden['attendre']} in het Frans") == 'attendre':
-    print('goed gedaan!')
-else:
-    print('dat is niet goed!')
+for fr_woord in woorden:
+    nl = input(f"wat betekent {woorden[fr_woord]} in het Frans")
+    if nl == fr_woord:
+        print('goed gedaan.')
+    else:
+        print('dat is niet goed.')
