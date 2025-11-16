@@ -10,3 +10,4 @@
 
 # Euler const.
 * [x] 1e test
+* [x] 2e test 
