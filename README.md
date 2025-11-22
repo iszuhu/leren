@@ -8,7 +8,12 @@
 
 # Collatz
 * [x] 1e test
+* [ ] 2e test 
 
 # Euler const.
 * [x] 1e test
 * [x] 2e test 
+
+# Perfect getal
+*[x] v1
+*[x] hoeveel in rage(1,10000)
